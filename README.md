@@ -82,3 +82,8 @@ public class BubbleSortAlgorithm implements SortAlgorithm {
 - What are beans? => @Component
 - What are dependencies of a bean? @Autowired
 - Where to search for beans? => basically no need to(package)
+
+## If there are instances that implement same interface?
+
+- Spring will generate exception as it cannot decide which bean to use
+- You can set @Primary in this case.
