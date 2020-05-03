@@ -13,12 +13,19 @@ public class BinarySearchImpl {
     @Autowired
     private SortAlgorithm sortAlgorithm;
     // Technically, it is called "constructor injection".
-    // There are other ways like "setter injection".
-    public BinarySearchImpl(SortAlgorithm sortAlgorithm) {
-        super();
-        System.out.println(sortAlgorithm); // to see which object has been passed as parameter
-        this.sortAlgorithm = sortAlgorithm;
-    }
+//    public BinarySearchImpl(SortAlgorithm sortAlgorithm) {
+//        super();
+//        System.out.println(sortAlgorithm); // to see which object has been passed as parameter
+//        this.sortAlgorithm = sortAlgorithm;
+//    }
+
+    // Here is setter injection
+//    public void setSortAlgorithm(SortAlgorithm sortAlgorithm) {
+//        this.sortAlgorithm = sortAlgorithm;
+//    }
+    // Actually you don't even need to do this.
+
+
 
     public int binarySearch(int[] numbers, int numberToSearchFor) {
 

@@ -87,3 +87,48 @@ public class BubbleSortAlgorithm implements SortAlgorithm {
 
 - Spring will generate exception as it cannot decide which bean to use
 - You can set @Primary in this case.
+
+## Setter injection and constructor injection
+
+- If a dependency is mandatory, constructor injection is recommended.
+- Else, in case of optional dependency, you can use setter injection.
+- In real world, however, just setter injection(actually, just @Autowired) is preferred.
+
+## AOP
+
+- Aspect Oriented Programming
+
+## Crosscutting Concerns
+
+- Considering many layers: like test modules
+
+## ORM
+
+- Object Relational Mapping
+
+## Spring Modules
+
+- Data Access/Integration: JDBC, ORM(like Hibernate), Transaction...
+- Web: WebSocket, Servlet, Web...
+- AOP
+- Aspects
+- Messaging
+- Core Container: Beans, Core, Context...
+- Test 
+
+## Spring Projects
+
+- Spring Boot: quickly build application
+- Spring Cloud: build cloud native apps
+- Spring Data: consistent data access
+- Spring Integration: application integration
+- Spring Batch: batch application
+- Spring Security: protect your application
+- ...
+
+## Why Spring?
+
+- it enables testable code. With JUnit, Mockito...
+- There is no plumbing code: makes your code simple and clear.
+- Flexible architecture. Lots of projects and modules.
+- Staying current.
