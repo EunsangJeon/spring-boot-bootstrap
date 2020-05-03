@@ -1,9 +1,10 @@
 package com.eunsang.spring.basic.firstspring;
 
-// import org.springframework.boot.SpringApplication;
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
 
-@SpringBootApplication
+@SpringBootApplication // This tells Sprint to search beans within the package it belongs to.
 public class FirstSpringApplication {
 
 	public static void main(String[] args) {
@@ -14,11 +15,17 @@ public class FirstSpringApplication {
 		// #2
 		// BinarySearchImpl binarySearchImpl = new BinarySearchImpl(new BubbleSortAlgorithm());
 		// You can (relatively) easily switch sorting algorithm
-		BinarySearchImpl binarySearchImpl = new BinarySearchImpl(new BubbleSortAlgorithm());
+		// BinarySearchImpl binarySearchImpl = new BinarySearchImpl(new BubbleSortAlgorithm());
+		// int result = binarySearchImpl.binarySearch(new int[] { 1, 2, 3, 4, 5 }, 3);
+		// System.out.println(result);
 
-		int result = binarySearchImpl.binarySearch(new int[] { 1, 2, 3, 4, 5 }, 3);
+		// #3 Application Context
+		ApplicationContext applicationContext =
+				SpringApplication.run(FirstSpringApplication.class, args);
+
+		BinarySearchImpl binarySearch = applicationContext.getBean(BinarySearchImpl.class);
+
+		int result = binarySearch.binarySearch(new int[] { 1, 2, 3, 4, 5 }, 3);
 		System.out.println(result);
-
-		// SpringApplication.run(FirstSpringApplication.class, args);
 	}
 }

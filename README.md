@@ -77,4 +77,8 @@ public class BubbleSortAlgorithm implements SortAlgorithm {
 
 - https://start.spring.io would help when you start from scratch.
 
- 
+## When you use Spring, you need to tell the framework about:
+
+- What are beans? => @Component
+- What are dependencies of a bean? @Autowired
+- Where to search for beans? => basically no need to(package)
