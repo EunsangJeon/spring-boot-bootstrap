@@ -1,11 +1,12 @@
 package com.eunsang.spring.basic.firstspring;
 
+import com.eunsang.spring.basic.firstspring.basic.BinarySearchImpl;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
 @SpringBootApplication // This tells Sprint to search beans within the package it belongs to.
-public class FirstSpringApplication {
+public class FirstSpringBasicApplication {
 
 	public static void main(String[] args) {
 
@@ -21,7 +22,7 @@ public class FirstSpringApplication {
 
 		// #3 Application Context
 		ApplicationContext applicationContext =
-				SpringApplication.run(FirstSpringApplication.class, args);
+				SpringApplication.run(FirstSpringBasicApplication.class, args);
 
 		BinarySearchImpl binarySearch = applicationContext.getBean(BinarySearchImpl.class);
 

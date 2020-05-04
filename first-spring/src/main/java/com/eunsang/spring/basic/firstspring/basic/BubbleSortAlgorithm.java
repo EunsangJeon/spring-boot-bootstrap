@@ -1,11 +1,11 @@
-package com.eunsang.spring.basic.firstspring;
+package com.eunsang.spring.basic.firstspring.basic;
 
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
-@Component
+@Component // #3
 @Primary
-public class QuickSortAlgorithm implements SortAlgorithm {
+public class BubbleSortAlgorithm implements SortAlgorithm {
     public int[] sort(int[] numbers) {
         // SORTING LOGIC
         return numbers;

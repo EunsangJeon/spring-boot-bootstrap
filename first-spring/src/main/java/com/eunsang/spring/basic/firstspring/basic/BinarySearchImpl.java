@@ -1,4 +1,4 @@
-package com.eunsang.spring.basic.firstspring;
+package com.eunsang.spring.basic.firstspring.basic;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

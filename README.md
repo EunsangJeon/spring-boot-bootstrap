@@ -87,6 +87,9 @@ public class BubbleSortAlgorithm implements SortAlgorithm {
 
 - Spring will generate exception as it cannot decide which bean to use
 - You can set @Primary in this case.
+- Or you can simply use name directly ...
+- @Primary has priority.
+- There is another option: @Qualifire("name")
 
 ## Setter injection and constructor injection
 
@@ -132,3 +135,23 @@ public class BubbleSortAlgorithm implements SortAlgorithm {
 - There is no plumbing code: makes your code simple and clear.
 - Flexible architecture. Lots of projects and modules.
 - Staying current.
+
+## Bean Scope
+
+- singleton: One instance per Spring Context. Default.
+- prototype: New bean whenever requested. @Scope("prototype") or @Scope(ConfigurableBeanFactory.SCOPE.PROTOTYPE) below @Component
+- request: One bean per HTTP request
+- session: One bean per HTTP session
+- You ought to keep minimum number of instances.
+
+## DAO
+
+- Data Access Object
+
+## GOF
+
+- Gang of Four Design Patterns in Java. It refers design patterns which were defined by four authors: Erich Gamma, Richard Helm, Ralph Johnson and John Vlissides in their book Design Patterns: Elements of Reusable Object-Oriented Software.
+
+## Difference betwoen GOF singletone and Spring singletone
+
+- GOF singletone is "one instance in JVM" while Spring singletone is "one instance per Spring Context.

@@ -1,9 +1,9 @@
-package com.eunsang.spring.basic.firstspring;
+package com.eunsang.spring.basic.firstspring.basic;
 
 import org.springframework.stereotype.Component;
 
-@Component // #3
-public class BubbleSortAlgorithm implements SortAlgorithm {
+@Component
+public class QuickSortAlgorithm implements SortAlgorithm {
     public int[] sort(int[] numbers) {
         // SORTING LOGIC
         return numbers;
