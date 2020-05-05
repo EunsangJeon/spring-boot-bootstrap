@@ -155,3 +155,44 @@ public class BubbleSortAlgorithm implements SortAlgorithm {
 ## Difference betwoen GOF singletone and Spring singletone
 
 - GOF singletone is "one instance in JVM" while Spring singletone is "one instance per Spring Context.
+
+## What if spring applcation scan components in other package(s)?
+
+- @ComponentScan("com.root.to.package")
+
+## Bean Lifecycle
+
+- @PostConstruct
+- @PreDestroy
+
+## CDI
+
+- JAVA EE Dependency Injection Standard (JSR-330)
+- Spring supports most anntations
+    - @Inject: @Autowired
+    - @Named: @Component & @Qualifier
+    - @Singleton: @Scope
+
+## Very basic two dependencies
+
+```
+<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+		</dependency>
+```
+
+## Spring without Spring Boot
+
+- @SpringBootApplication => @Configuration & @ComponentScan
+- You cannot SpringApplication.run() to get application context.
+- Instead, you will do 
+```
+new AnnotationConfigApplicationContext(ContextClass.class)
+```
+- And, you need to edit pom.xml
