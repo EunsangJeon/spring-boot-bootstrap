@@ -225,3 +225,32 @@ new AnnotationConfigApplicationContext(ContextClass.class)
 
 - @Value("${value.name}") from component side
 - @PropertySource("classpath:property.file.name")
+
+## Let's take a look at Maven
+
+- POM stands for Projects Object Model
+- Meven has a lifecycle
+    - Validate: checks if pom.xml and codes are valid
+    - Compile: compiles main codes and test codes
+    - Test: unit test
+    - Package: it will create jar
+    - Integration Test
+    - Verify
+    - Install: install artifacts to local storage
+    - Deploy: to remote maven repository
+- If you do "mvn clean install" then it will do all the lifecycle up to Install.
+- You must follow the structure for maven. You can search it (or your IDE will do this).
+- Local Repository: Repository on your local system. It's like cache for remote mvn repo.
+- Remote Maven Repository: Central Repositories. It stores all the versions of all dependencies.
+- You can google and add dependencies to your pom.xml.
+- mvn --version check version
+- "clean" cleans up previous files. mvn clean: deletes target directory.
+- mvn compile: just validate and compile.
+- mvn test-compile: compiles source coes and test codes.
+- mvn package: create a jar
+- mvn test: all the unit tests will run(up to test: compile and test)
+- help:effective-settings: will show all the mvn settings
+- help:effective-pom: it will print pom and its super poms
+- dependency:tree
+- dependency:sources
+- --debug: provides details for debugging
