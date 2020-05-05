@@ -196,3 +196,32 @@ public class BubbleSortAlgorithm implements SortAlgorithm {
 new AnnotationConfigApplicationContext(ContextClass.class)
 ```
 - And, you need to edit pom.xml
+
+## XML setting for application context(without Spring Boot)
+
+- https://docs.spring.io/spring/docs/3.0.x/spring-framework-reference/html/beans.html
+- In case ling changes, google spring documentation application context example
+
+## How are they different from each other? - Disambiguation
+
+- IOC Container: Program or framework provide IOC.
+- Application Context
+    - In Spring, there are two implementation of IOC Container. Application context is one of them.
+    - It is actually Bean Factory++
+        - Spring's AOP features
+        - Intenationallization: I18n capabilities. Like currency, language kind of locale stuffs.
+        - WebApplicationContext for web applications etc.
+- Bean Factory
+    - It only provides basic contols of beans.
+
+## Few more annotations for components
+
+- @Component: Generic Component.
+- @Repository: encapsulating storage, retrieval and search behavior typically from a relational datbase.
+- @Service: Buisness Service Facade or Buisness Logic.
+- @Controller: Controller in MVC pattern.
+
+## To read values from property file
+
+- @Value("${value.name}") from component side
+- @PropertySource("classpath:property.file.name")

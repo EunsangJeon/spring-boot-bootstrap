@@ -12,12 +12,14 @@ public class FirstSpringBasicApplication {
 
 	public static void main(String[] args) {
 
-		ApplicationContext applicationContext =
+		AnnotationConfigApplicationContext applicationContext =
 				new AnnotationConfigApplicationContext(FirstSpringBasicApplication.class);
 
 		BinarySearchImpl binarySearch = applicationContext.getBean(BinarySearchImpl.class);
 
 		int result = binarySearch.binarySearch(new int[] { 1, 2, 3, 4, 5 }, 3);
 		System.out.println(result);
+
+		applicationContext.close();
 	}
 }

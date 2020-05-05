@@ -15,11 +15,13 @@ public class FirstSpringComponentScanApplication {
             LoggerFactory.getLogger(FirstSpringComponentScanApplication.class);
 
     public static void main(String[] args) {
-        ApplicationContext applicationContext =
+        AnnotationConfigApplicationContext applicationContext =
                 new AnnotationConfigApplicationContext(FirstSpringComponentScanApplication.class);
 
         ComponentDAO componentDAO = applicationContext.getBean(ComponentDAO.class);
 
         LOGGER.info("{}", componentDAO);
+
+        applicationContext.close();
     }
 }

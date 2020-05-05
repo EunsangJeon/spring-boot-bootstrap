@@ -15,7 +15,7 @@ public class FirstSpringScopeApplication {
     private static Logger LOGGER = LoggerFactory.getLogger(FirstSpringScopeApplication.class);
 
     public static void main(String[] args) {
-        ApplicationContext applicationContext =
+        AnnotationConfigApplicationContext applicationContext =
                 new AnnotationConfigApplicationContext(FirstSpringScopeApplication.class);
 
         PersonDAO personDAO = applicationContext.getBean(PersonDAO.class);
@@ -27,5 +27,7 @@ public class FirstSpringScopeApplication {
 
         LOGGER.info("{}", personDAO2);
         LOGGER.info("{}", personDAO2.getJdbcConnection());
+
+        applicationContext.close();
     }
 }
