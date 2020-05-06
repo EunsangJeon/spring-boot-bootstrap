@@ -254,3 +254,10 @@ new AnnotationConfigApplicationContext(ContextClass.class)
 - dependency:tree
 - dependency:sources
 - --debug: provides details for debugging
+
+## JUnit
+
+- Unit test: testing a specific method or group of methods
+- Screen test: testing total deployment
+- Junit is a framework that helps us to do unit test.
+- As Junit is automated it's convenient to run test.
