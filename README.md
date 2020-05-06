@@ -177,14 +177,14 @@ public class BubbleSortAlgorithm implements SortAlgorithm {
 
 ```
 <dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-core</artifactId>
-		</dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-core</artifactId>
+</dependency>
 
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-context</artifactId>
-		</dependency>
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-context</artifactId>
+</dependency>
 ```
 
 ## Spring without Spring Boot
@@ -261,3 +261,7 @@ new AnnotationConfigApplicationContext(ContextClass.class)
 - Screen test: testing total deployment
 - Junit is a framework that helps us to do unit test.
 - As Junit is automated it's convenient to run test.
+
+## Mockito
+
+- Mockito will make your life a lot easier by providing mocks to your unit tests.
