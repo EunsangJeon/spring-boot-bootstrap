@@ -136,6 +136,29 @@ public class BubbleSortAlgorithm implements SortAlgorithm {
 - Flexible architecture. Lots of projects and modules.
 - Staying current.
 
+## Why Spring Boot?
+
+- Enables building produection ready applications quickly
+- Provides common non-functional features
+    - embedded servers
+    - metrics
+    - health checks
+    - externalized configuration
+
+## What Spring Boot is NOT!
+
+- Code generation
+- Neither an application server nor a web server
+
+## Spring Boot Features
+
+- Quick Starter Projects with Auto Configuration
+    - Web
+    - JPA
+- Embedded Servers: Tomcat, Jetty or Undertow
+- Production-ready features
+    - metrics, health checks and externalized configuration
+
 ## Bean Scope
 
 - singleton: One instance per Spring Context. Default.
