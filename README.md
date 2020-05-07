@@ -377,3 +377,15 @@ public class UserAccessAspect {
 - @Around and ProceedingJoinPoint
 - It is recommended to use common pointcut with @Pointcut
 - With Pointcut you can sellectively do something on certain annotationed methods or classes
+
+## H2
+
+- In memory DB to test things.
+
+## CommandLineRunner
+
+- It is an interface that helps you to run things on SpringBootApplication class.
+
+## Logger
+
+- Be familiar with 'private Logger logger = LoggerFactory.getLogger(this.getClass());'
