@@ -288,3 +288,92 @@ new AnnotationConfigApplicationContext(ContextClass.class)
 ## Mockito
 
 - Mockito will make your life a lot easier by providing mocks to your unit tests.
+
+## For MVC 
+
+- @RestController
+- @GetMapping
+
+## Spring Boot Starter Project Options
+
+- spring-boot-starter-web-services
+- spring-boot-starter-web
+- spring-boot-starter-test
+- spring-boot-starter-jdbc
+- spring-boot-starter-hateos
+- spring-boot-starter-security
+- spring-boot-starter-data-jpa
+- spring-boot-starter-cache
+- spring-boot-starter-data-rest
+- spring-boot-starter-actuator
+- spring-boot-starter-undertow
+- srping-boot-starter-jetty
+- spring-boot-starter-tomcat
+- spring-boot-starter-logging
+- spring-boot-starter-log4j2
+- ...
+
+## Spring Boot Actuator
+
+- http://localhost:8080
+- http://localhost:8080/actuator/ => mappings, metrics, health, beans and so on
+- pom.xml:
+```
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-actuator</artifactId>
+</dependency>
+
+<dependency>
+    <groupId>org.springframework.data</groupId>
+    <artifactId>spring-data-rest-hal-browser</artifactId>
+</dependency>
+```
+- property: management.endpoints.web.exposure.include = * 
+
+## Srping Boot Developer Tools
+
+- seems not working for now...
+```
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-devtools</artifactId>
+</dependency>
+```
+
+## Spring AOP
+
+```
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-aop</artifactId>
+</dependency>
+```
+- Aspect: An aspect is a class that implements enterprise application concerns that cut across multiple classes, such as transaction management.
+```
+// AOP
+// Configuration
+@Aspect // Pointcut + Advice = Aspect
+@Configuration
+public class UserAccessAspect {
+
+    private Logger logger = LoggerFactory.getLogger(this.getClass());
+
+    // What kind of method calls I would intercept and when
+    @Before("execution(* com.nick.spring.aop.business.*.*(..))") // Pointcut
+    public void before(JoinPoint joinPoint) {
+        // Advice
+        logger.info("Intercepted Method Calls - {}", joinPoint);
+    }
+
+}
+```
+- Pointcut: where(= which execution) to intercept
+- Joint: specific pointcut
+- Advice: what to do?
+- Weaving: Implementing AOP(the process itself)
+- Weaver: framework implementing weaving
+- @After, @AfterThrowing and @AfterReturning
+- @Around and ProceedingJoinPoint
+- It is recommended to use common pointcut with @Pointcut
+- With Pointcut you can sellectively do something on certain annotationed methods or classes
