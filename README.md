@@ -395,4 +395,21 @@ public class UserAccessAspect {
 - Java Persistence API
 - Hibernate is one of the famous implement of JPA(actually it was introduced as ORM way before JPA)
 - It controls interface to DB.
- 
+```
+// ...
+@Entity
+// @Table(name = "person") // you don't need as long as it matches to the table
+public class Person {
+
+    @Column(name = "id") // you don't need as long as it matches to the column
+    @Id // primary key
+    @GeneratedValue // auto generated
+    private int id;
+    private String name;
+    private String location;
+    private Date lastSeen;
+
+    // you have to create a constructor with no parameters
+    public Person() { }
+// ...
+```
