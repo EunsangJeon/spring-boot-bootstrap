@@ -389,3 +389,10 @@ public class UserAccessAspect {
 ## Logger
 
 - Be familiar with 'private Logger logger = LoggerFactory.getLogger(this.getClass());'
+
+## JPA
+
+- Java Persistence API
+- Hibernate is one of the famous implement of JPA(actually it was introduced as ORM way before JPA)
+- It controls interface to DB.
+ 
