@@ -413,3 +413,6 @@ public class Person {
     public Person() { }
 // ...
 ```
+- @Transactional: if one fails it fails all.
+- spring.jpa.show-sql=true in property to see hibernate's queries
+
