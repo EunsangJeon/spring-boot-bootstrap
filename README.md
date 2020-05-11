@@ -437,7 +437,6 @@ spring.datasource.url=jdbc:mysql://localhost:3306/person_example
 spring.datasource.username=personuser
 spring.datasource.password=YOUR_PASSWORD
 ```
-
 - Restart the app and You are ready!
 
 > Spring Boot can setup the database for you using Hibernate
@@ -453,9 +452,26 @@ Things to note:
    - update : Update the database schema
 - Reference : https://docs.jboss.org/hibernate/orm/5.2/userguide/html_single/Hibernate_User_Guide.html#configurations-hbmddl
 
-
 application.properties
 ```
 #none, validate, update, create, create-drop
 spring.jpa.hibernate.ddl-auto=create
 ```
+## jar, war
+
+- ar stands for Archive.
+
+## Servlet
+
+- https://docs.oracle.com/javaee/7/tutorial/servlets001.htm
+- Servlet is a Java programming language class used to extend the capabilities of servers that host applications accessed by means of a request-response programming model.
+
+## JSP
+
+- Java Server Pages
+
+## scriptlets
+
+- <% %>
+- But business logics should be in Logic classes
+- Avoid script expressions to do logics.
