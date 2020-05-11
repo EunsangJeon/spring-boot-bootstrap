@@ -1,4 +1,4 @@
-package com.nick.web;
+package com.nick.jee;
 
 public class UserValidationService {
 

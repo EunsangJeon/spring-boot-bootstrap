@@ -465,6 +465,8 @@ spring.jpa.hibernate.ddl-auto=create
 
 - https://docs.oracle.com/javaee/7/tutorial/servlets001.htm
 - Servlet is a Java programming language class used to extend the capabilities of servers that host applications accessed by means of a request-response programming model.
+- Servlets are usually added in web.xml or Annotation @Controller is used
+- Dispatcher Servlet is a Front Controller
 
 ## JSP
 

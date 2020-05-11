@@ -1,4 +1,4 @@
-package com.nick.web;
+package com.nick.jee;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

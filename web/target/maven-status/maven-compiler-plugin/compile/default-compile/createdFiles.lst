@@ -1,2 +1,3 @@
-com\nick\web\UserValidationService.class
-com\nick\web\LoginServlet.class
+com\nick\jee\UserValidationService.class
+com\nick\springmvc\LoginController.class
+com\nick\jee\LoginServlet.class
