@@ -477,3 +477,30 @@ spring.jpa.hibernate.ddl-auto=create
 - <% %>
 - But business logics should be in Logic classes
 - Avoid script expressions to do logics.
+
+## Spring with Tomcat
+
+- dispatcher: or first controller (map root dir)
+- controller: or handler(map sub dir)
+- view resolver: sets prefix and suffix
+- view: files like jsp
+
+## Spring MVC Request Flow
+
+- DispatcherServlet receives HTTP Request. 
+- DispatcherServlet identifies the right Controller based on the URL.
+- Controller executes Business Logic.
+- Controller returns a) Model b) View Name Back to DispatcherServlet.
+- DispatcherServlet identifies the correct view (ViewResolver).
+- DispatcherServlet makes the model available to view and executes it.
+- DispatcherServlet returns HTTP Response Back.
+- Flow: http://docs.spring.io/spring-framework/docs/2.0.8/reference/images/mvc.png
+
+## Logging with log4j
+
+- Logging levels
+    - TRACE: Everything
+    - DEBUG: logs more detailed than info
+    - INFO: logs with informations
+    - WARN: logs only when there is warning
+    - ERROR: logs only when there is error
