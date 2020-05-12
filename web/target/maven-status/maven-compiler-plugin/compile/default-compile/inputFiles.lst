@@ -1,3 +1,4 @@
 /Users/jeon-eunsang/Developing/Github/spring-boot-first/web/src/main/java/com/nick/jee/LoginServlet.java
-/Users/jeon-eunsang/Developing/Github/spring-boot-first/web/src/main/java/com/nick/springmvc/LoginController.java
+/Users/jeon-eunsang/Developing/Github/spring-boot-first/web/src/main/java/com/nick/login/LoginController.java
 /Users/jeon-eunsang/Developing/Github/spring-boot-first/web/src/main/java/com/nick/jee/UserValidationService.java
+/Users/jeon-eunsang/Developing/Github/spring-boot-first/web/src/main/java/com/nick/login/LoginService.java
