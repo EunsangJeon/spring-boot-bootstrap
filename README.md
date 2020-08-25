@@ -1,6 +1,6 @@
 ## What is Spring
 
-- Spring is a dependency injection framework
+- Spring is a dependency injection framework.
 
 ## What is dependency?
 
